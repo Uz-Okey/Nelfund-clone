@@ -1,10 +1,9 @@
-import  { useState } from 'react';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+
 import { Link } from 'react-router';
 import logo from '../assets/logo.webp';
 
 const LoginPage = () => {
-  const [showPassword, setShowPassword] = useState(false);
+
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-white font-sans">
@@ -42,22 +41,15 @@ const LoginPage = () => {
             <div className="relative">
               <label className="block text-sm font-bold text-gray-700 mb-2">Password</label>
               <input 
-                type={showPassword ? "text" : "password"} 
                 placeholder="********"
                 className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-green-500 outline-none transition-all text-sm"
               />
-              <button 
-                type="button"
-                onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-10 text-gray-400 hover:text-gray-600"
-              >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </button>
+              
             </div>
 
             {/* Submit Button */}
             <button className="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 rounded-lg shadow-md transition-colors">
-              Log In
+                <Link to="/">  Log In</Link>          
             </button>
           </form>
 
