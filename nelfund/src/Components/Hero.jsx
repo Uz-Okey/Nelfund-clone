@@ -11,7 +11,7 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="herobg pt-15 md:px-20 lg:px-40 px-4 h-screen sm:h-[80vh] md:h-screen">
+    <div className="herobg pt-15 md:px-20 lg:px-40 px-4 h-[80vh] md:h-screen">
       {heroText ? (
         <div>
           <div className="text-left text-white p-5">
