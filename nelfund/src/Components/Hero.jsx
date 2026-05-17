@@ -6,7 +6,7 @@ const Hero = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setHeroText(true);
-    }, 4000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
