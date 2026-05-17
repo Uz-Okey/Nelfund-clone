@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Spinner } from "@/Components/ui/spinner";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 const Hero = () => {
   const [heroText, setHeroText] = useState(false);
   useEffect(() => {
@@ -27,10 +27,10 @@ const Hero = () => {
 
           <div className="block mt-3 px-4 space-x-3">
             <button className="bg-green-700 hover:shadow-2xl py-3 px-3 md:px-5 text-white  font-bold rounded-4xl">
-              <Link to="PortalPage"> APPLY NOW</Link>
+              <Link to="/PortalPage"> APPLY NOW</Link>
             </button>
             <button className="bg-white hover:shadow-2xl py-3 px-5 md:px-10 text-black  font-bold rounded-4xl">
-              <Link to="LoginPage">LOGIN</Link>
+              <Link to="/LoginPage">LOGIN</Link>
             </button>
           </div>
         </div>

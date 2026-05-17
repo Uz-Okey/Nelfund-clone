@@ -1,16 +1,13 @@
-
 import {
   FaMoneyBillWave,
   FaClock,
   FaLock,
   FaCalendarAlt,
-  
 } from "react-icons/fa";
 import logo from "../assets/logo.webp";
 import { Link } from "react-router-dom";
 
-const PortalPage = () => { 
-
+const PortalPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white font-sans">
       {/* Header */}
@@ -38,38 +35,33 @@ const PortalPage = () => {
             Welcome to the <span className="text-green-600">Student</span> Loan
             Portal
           </h1>
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 mb-12">
-                <FeatureItem
-                  Icon={FaMoneyBillWave}
-                  title="Interest Free Loan"
-                  desc="No hidden charges, completely interest free"
-                />
-                <FeatureItem
-                  Icon={FaClock}
-                  title="Fast & Easy"
-                  desc="Complete student loan application within 15 - 30 minutes."
-                />
-                <FeatureItem
-                  Icon={FaLock}
-                  title="Safe & Secure"
-                  desc="Built in security to keep all your data safe"
-                />
-                <FeatureItem
-                  Icon={FaCalendarAlt}
-                  title="Flexible Payment Duration"
-                  desc="Payment of student loan begins two years after NYSC"
-                />
-              </div>
-              <button
-                className="w-full md:w-max mx-auto block bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-5 rounded-lg transition-colors"
-              >
-                Get Started
-              </button>
-            </>
-    
-            
-        
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 mb-12">
+              <FeatureItem
+                Icon={FaMoneyBillWave}
+                title="Interest Free Loan"
+                desc="No hidden charges, completely interest free"
+              />
+              <FeatureItem
+                Icon={FaClock}
+                title="Fast & Easy"
+                desc="Complete student loan application within 15 - 30 minutes."
+              />
+              <FeatureItem
+                Icon={FaLock}
+                title="Safe & Secure"
+                desc="Built in security to keep all your data safe"
+              />
+              <FeatureItem
+                Icon={FaCalendarAlt}
+                title="Flexible Payment Duration"
+                desc="Payment of student loan begins two years after NYSC"
+              />
+            </div>
+            <button className="w-full md:w-max mx-auto block bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-5 rounded-lg transition-colors">
+              Get Started
+            </button>
+          </>
         </div>
       </main>
     </div>
